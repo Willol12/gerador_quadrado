@@ -1,0 +1,28 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button class='botao' id='btnCriar' onclick="gerarQuadrado()">Gerar novo</button>
+ <div id="app">
+   <div class="box"></div>
+ </div>
+ <script>
+   var btnCriar = document.querySelector('#btnCriar')
+   
+   function gerarQuadrado() {
+     let boxElement = document.createElement("div");
+     boxElement.style.width = '100px';
+     boxElement.style.height = '100px';
+     boxElement.style.backgroundColor = '#f00';
+     boxElement.classList.add('box');
+     document.body.appendChild(boxElement);
+   }
+
+    
+  </script>
+</body>
+</html>
